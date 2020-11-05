@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import ImageBkGrndWrapper from "../styles/components/background-image"
+import AboutWrapper from "../styles/components/about"
+import Container from "../styles/global/container"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,7 +14,7 @@ import ImageBkGrndWrapper from "../styles/components/background-image"
  * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-const ImageBkgrnd = () => {
+const About = () => {
   const data = useStaticQuery(graphql`
     query {
       explorerImage: file(relativePath: { eq: "explorer.jpg" }) {
@@ -31,10 +32,12 @@ const ImageBkgrnd = () => {
   }
 
   return (
-    <ImageBkGrndWrapper fluid={data.explorerImage.childImageSharp.fluid}>
-     <p>About</p>
-    </ImageBkGrndWrapper>
+    <Container>
+    <AboutWrapper fluid={data.explorerImage.childImageSharp.fluid}>
+      <p>About</p>
+    </AboutWrapper>
+    </Container>
   )
 }
 
-export default ImageBkgrnd
+export default About
