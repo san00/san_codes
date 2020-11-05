@@ -1,4 +1,6 @@
-export * from "./aside";
-export * from "./article";
-export * from "./header";
-export * from "./background-image";
+export * from "./aside"
+export * from "./article"
+export * from "./background-image"
+export * from "./banner"
+export * from "./header"
+
