@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { spacingScale, Red, Green } from "../utils"
 
 const BannerWrapper = styled.section`
+  grid-area: banner;
   display: flex;
   flex-direction: column;
   padding: ${spacingScale.spacing_l};

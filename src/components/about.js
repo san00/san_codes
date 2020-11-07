@@ -32,11 +32,9 @@ const About = () => {
   }
 
   return (
-    <Container>
     <AboutWrapper fluid={data.explorerImage.childImageSharp.fluid}>
       <p>About</p>
     </AboutWrapper>
-    </Container>
   )
 }
 

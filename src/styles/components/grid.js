@@ -1,28 +1,24 @@
 import styled from "styled-components"
+import { mediaQuery, spacingScale } from "../utils"
 
 const GridWrapper = styled.section`
   display: grid;
-  gap: 0.5em;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
+  gap: 0.8em;
+  grid-template-columns: repeat(auto-fit, minmax(0.5fr));
   grid-template-areas:
     "banner"
     "about"
-    "article"
-    "aside ";
-`
+    "projects"
+    "aside";
+  padding: ${spacingScale.spacing_l};
 
-export const Box1Aside = styled.div`
-  grid-area: aside;
-`
-export const Box2Article = styled.div`
-  grid-area: article;
-`
-export const Box3Banner = styled.div`
-  grid-area: banner;
-`
-export const Box4About = styled.div`
-  grid-area: about;
+  @media (min-width: ${mediaQuery.breakpoint1}) {
+    grid-template-columns: 2, 1fr, 2fr;
+    grid-template-rows: 2, 1fr, 2fr;
+    grid-template-areas:
+      "aside banner"
+      "projects about";
+  }
 `
 
 export default GridWrapper
