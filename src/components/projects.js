@@ -1,14 +1,26 @@
 import React from "react"
 
-import ProjectsWrapper, { ProjectsText } from "../styles/components/projects"
+import ProjectsWrapper, {
+  ProjectsGridHeader,
+  ProjectsGridLink,
+  ProjectsGridText,
+} from "../styles/components/projects"
 
 function Projects() {
   return (
-      <ProjectsWrapper>
-        <ProjectsText>Starring the following apps and projects</ProjectsText>
-        <ProjectsText> Shop a lot, GraphQl, React and Strapi</ProjectsText>
-        <ProjectsText> MERN job lister, a CRUD app</ProjectsText>
-      </ProjectsWrapper>
+    <ProjectsWrapper>
+      <ProjectsGridHeader>
+        Starring the following apps and projects
+      </ProjectsGridHeader>
+      <ProjectsGridLink to="projects">
+        <ProjectsGridText>
+          Shop a lot, GraphQl, React and Strapi
+        </ProjectsGridText>
+      </ProjectsGridLink>
+      <ProjectsGridLink to="projects">
+        <ProjectsGridText> MERN job lister, a CRUD app</ProjectsGridText>
+      </ProjectsGridLink>
+    </ProjectsWrapper>
   )
 }
 
