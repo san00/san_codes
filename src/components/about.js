@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import AboutWrapper from "../styles/components/about"
-import Container from "../styles/global/container"
+import AboutWrapper,{AboutGridLink, AboutGridTitle, AboutGridHeader, AboutGridText } from "../styles/components/about"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -19,7 +18,7 @@ const About = () => {
     query {
       explorerImage: file(relativePath: { eq: "explorer.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid{
             ...GatsbyImageSharpFluid
           }
         }
@@ -32,10 +31,16 @@ const About = () => {
   }
 
   return (
+    
+   
     <AboutWrapper fluid={data.explorerImage.childImageSharp.fluid}>
-      <p>About</p>
+     <AboutGridLink to="about"><AboutGridTitle >About</AboutGridTitle>
+     <AboutGridHeader>Taking a risk!</AboutGridHeader>
+     <AboutGridText>The true tales of Osania the front-end developer</AboutGridText>
+     </AboutGridLink>
     </AboutWrapper>
-  )
+    
+  ) 
 }
 
 export default About
