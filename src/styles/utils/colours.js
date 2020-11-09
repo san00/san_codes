@@ -20,7 +20,7 @@ export const Blue = {
   
   export const Red = {
     100: "#ff00ff",
-    200: "#b54248",
+    200: "#FACECE",
     300: "#f70c0c"
   };
   
