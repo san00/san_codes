@@ -33,9 +33,9 @@ const About = () => {
   return (
     
    
-    <AboutWrapper fluid={data.explorerImage.childImageSharp.fluid}>
-     <AboutGridLink to="about"><AboutGridTitle >About</AboutGridTitle>
-     <AboutGridHeader>Taking a risk!</AboutGridHeader>
+    <AboutWrapper fluid={data.explorerImage.childImageSharp.fluid} alt="explorer in jungle">
+     <AboutGridLink to="about" active ><AboutGridTitle >About</AboutGridTitle>
+     <AboutGridHeader>Risky!</AboutGridHeader>
      <AboutGridText>The true tales of Osania the front-end developer</AboutGridText>
      </AboutGridLink>
     </AboutWrapper>
