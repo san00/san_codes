@@ -4,4 +4,6 @@ export * from "./about"
 export * from "./banner"
 export * from "./grid"
 export * from "./header"
+export * from "./shoppy"
+export * from "./mern"
 

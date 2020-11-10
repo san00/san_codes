@@ -10,7 +10,6 @@ const GridWrapper = styled.section`
     "about"
     "projects"
     "aside";
-  padding: ${spacingScale.spacing_l};
 
   @media (min-width: ${mediaQuery.breakpoint1}) {
     grid-template-columns: 2, 1fr, 2fr;

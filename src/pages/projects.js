@@ -1,21 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
+import Mern from "../components/mern"
+import Shoppy from "../components/shoppy"
 import { ProjectsText, ProjectsLink } from "../styles/components/projects"
+import Heading from "../styles/global/heading"
 
 function Projects() {
   return (
     <Layout>
-      <ProjectsText>
-        Hi There!, I'm working on this projects page, but for now, heres a
-        random dad joke:{" "}
-      </ProjectsText>
-      <ProjectsText>
-        What did one plate say to the other plate? Dinner is on me!
-      </ProjectsText>
+      <Shoppy />
+      <Mern/>
       <ProjectsLink to="/">
         Go back to the home page, its currently nicer there.
-      </ProjectsLink>{" "}
-      <br />
+      </ProjectsLink>
     </Layout>
   )
 }

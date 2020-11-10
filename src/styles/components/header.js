@@ -6,7 +6,6 @@ const HeaderContainer = styled.nav`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: ${spacingScale.spacing_l};
   background-color:${Green[100]};
   height:5em;
 `
