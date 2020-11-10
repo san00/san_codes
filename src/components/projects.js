@@ -3,22 +3,29 @@ import React from "react"
 import ProjectsWrapper, {
   ProjectsGridHeader,
   ProjectsGridLink,
-  ProjectsGridText,
+  ProjectsGridTextOne,
+  ProjectsGridTextTwo,
+  Triangle,
+  InnerContainer,
 } from "../styles/components/projects"
 
 function Projects() {
   return (
     <ProjectsWrapper>
-      <ProjectsGridHeader>
-        Starring the following apps and projects
-      </ProjectsGridHeader>
       <ProjectsGridLink to="projects">
-        <ProjectsGridText>
-          Shop a lot, GraphQl, React and Strapi
-        </ProjectsGridText>
-      </ProjectsGridLink>
-      <ProjectsGridLink to="projects">
-        <ProjectsGridText> MERN job lister, a CRUD app</ProjectsGridText>
+        <InnerContainer>
+          <Triangle>
+            <ProjectsGridTextOne>
+              Shop a lot, GraphQl, React and Strapi
+            </ProjectsGridTextOne>
+          </Triangle>
+          <Triangle>
+            <ProjectsGridTextTwo>MERN job lister, CRUD app</ProjectsGridTextTwo>
+          </Triangle>
+        </InnerContainer>
+        <ProjectsGridHeader>
+          Starring the following apps and projects
+        </ProjectsGridHeader>
       </ProjectsGridLink>
     </ProjectsWrapper>
   )
