@@ -6,18 +6,17 @@ import Img from "gatsby-image"
 const MernWrapper = styled.section`
   display: flex;
   flex-direction: row;
-  margin: ${spacingScale.spacing_l};
+  margin-bottom: ${spacingScale.spacing_m};
 `
 
 export const InnerWrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: right;
-  margin: ${spacingScale.spacing_l};
   padding: ${spacingScale.spacing_m};
 `
 export const MernLink = styled(Link)`
-  text-decoration: none; ;
+  text-decoration: none;
 `
 
 export const MernImg = styled(Img)`
@@ -26,8 +25,7 @@ export const MernImg = styled(Img)`
 `
 export const MernHeader = styled.h3`
   font-size: 1.953rem;
-
-  text-align: right;
+  text-align:center;
 `
 
 export const MernText = styled.p`
