@@ -1,9 +1,10 @@
 export * from "./aside"
 export * from "./projects"
 export * from "./about"
+export * from "./aboutMe"
 export * from "./banner"
 export * from "./grid"
 export * from "./header"
 export * from "./shoppy"
 export * from "./mern"
-
+export * from "./textSection"
