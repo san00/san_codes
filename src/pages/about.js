@@ -1,16 +1,12 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { AboutText, AboutLink } from "../styles/components/about"
+import React from "react"
+import AboutMe from "../components/aboutMe"
+
 function About() {
-    return (
-        <Layout>
-            
-           <AboutText>Welcome to my world.</AboutText>
-           <AboutText>I'm a front-end dev, making usable things for the web.</AboutText>
-           <AboutText>To be continued...</AboutText> 
-           <AboutLink to="/">Go back to the home page, its currently nicer there.</AboutLink> <br />
-        </Layout>
-    )
+  return (
+    <div>
+      <AboutMe />
+    </div>
+  )
 }
 
 export default About
