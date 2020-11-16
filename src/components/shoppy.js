@@ -7,7 +7,6 @@ import ShoppyWrapper, {
   ShoppyHeader,
   ShoppyText,
 } from "../styles/components/shoppy"
-import Container from "../styles/global/container"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -38,26 +37,25 @@ function Shoppy() {
   }
 
   return (
-    <Container>
-      <ShoppyWrapper>
-        <p>
-          <ShoppyImg
-            fluid={shoppyImage.appImage.childImageSharp.fluid}
-            alt="shopping cart with drinks"
-          ></ShoppyImg>
-        </p>
-        <InnerWrapper>
-          <ShoppyHeader>Shoppy e-commerce</ShoppyHeader>
-          <ShoppyText>
-            Buy drinks from the store by adding them to a cart and checking out.
-            The app uses a headless CMS architecture to edit and manage content.
-            Consuming the API using GraphQl.
-          </ShoppyText>
-          <ShoppyText>React, GraphQL, Strapi, Stripe, MongoDB </ShoppyText>
-          <ShoppyText>social links to go here</ShoppyText>
-        </InnerWrapper>
-      </ShoppyWrapper>
-    </Container>
+    <ShoppyWrapper>
+      <p>
+        <ShoppyImg
+          fluid={shoppyImage.appImage.childImageSharp.fluid}
+          alt="shopping cart with drinks"
+          backgroundColor="#546387"
+        ></ShoppyImg>
+      </p>
+      <InnerWrapper>
+        <ShoppyHeader>Shoppy e-commerce</ShoppyHeader>
+        <ShoppyText>
+          Buy drinks from the store by adding them to a cart and checking out.
+          The app uses a headless CMS architecture to edit and manage content.
+          Consuming the API using GraphQl.
+        </ShoppyText>
+        <ShoppyText>React, GraphQL, Strapi, Stripe, MongoDB </ShoppyText>
+        <ShoppyText>social links to go here</ShoppyText>
+      </InnerWrapper>
+    </ShoppyWrapper>
   )
 }
 

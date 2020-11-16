@@ -7,7 +7,6 @@ import MernWrapper, {
   MernHeader,
   MernText,
 } from "../styles/components/mern"
-import Container from "../styles/global/container"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -38,26 +37,24 @@ function Mern() {
   }
 
   return (
-    <Container>
-      <MernWrapper>
-        <InnerWrapper>
-          <MernHeader>MERN vacancy manager</MernHeader>
-          <MernText>
-            Create, read, update and delete (CRUD) a list of job vacancies. The
-            app uses a NoSQL database to manage content. Consumed through REST
-            API endpoints.
-          </MernText>
-          <MernText>MongoDB, Express, React, Node </MernText>
-          <MernText>social links to go here</MernText>
-        </InnerWrapper>
-        <p>
-          <MernImg
-            fluid={mernImage.appImage.childImageSharp.fluid}
-            alt="A list with job information"
-          ></MernImg>
-        </p>
-      </MernWrapper>
-    </Container>
+    <MernWrapper>
+      <InnerWrapper>
+        <MernHeader>MERN vacancy manager</MernHeader>
+        <MernText>
+          Create, read, update and delete (CRUD) a list of job vacancies. The
+          app uses a NoSQL database to manage content. Consumed through REST API
+          endpoints.
+        </MernText>
+        <MernText>MongoDB, Express, React, Node </MernText>
+        <MernText>social links to go here</MernText>
+      </InnerWrapper>
+      <p>
+        <MernImg
+          fluid={mernImage.appImage.childImageSharp.fluid}
+          alt="A list with job information"
+        ></MernImg>
+      </p>
+    </MernWrapper>
   )
 }
 

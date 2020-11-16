@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const ShoppyWrapper = styled.section`
   display: flex;
   flex-direction: row;
-  margin: ${spacingScale.spacing_l};
+  margin-bottom: ${spacingScale.spacing_xxl};
 `
 
 export const InnerWrapper = styled.section`
@@ -14,7 +14,6 @@ export const InnerWrapper = styled.section`
   flex-direction: column;
   justify-content: right;
   margin: ${spacingScale.spacing_l};
-  padding: ${spacingScale.spacing_m};
 `
 export const ShoppyLink = styled(Link)`
   text-decoration: none; ;
@@ -26,7 +25,7 @@ export const ShoppyImg = styled(Img)`
 `
 export const ShoppyHeader = styled.h3`
   font-size: 1.953rem;
-  text-align: left;
+  text-align: center;
 `
 
 export const ShoppyText = styled.p`
