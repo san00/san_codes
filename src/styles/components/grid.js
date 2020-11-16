@@ -10,7 +10,9 @@ const GridWrapper = styled.section`
     "about"
     "projects"
     "aside";
-
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 300;
+  
   @media (min-width: ${mediaQuery.breakpoint1}) {
     grid-template-columns: 2, 1fr, 2fr;
     grid-template-rows: 2, 1fr, 2fr;

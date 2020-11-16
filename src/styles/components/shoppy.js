@@ -26,12 +26,16 @@ export const ShoppyImg = styled(Img)`
 export const ShoppyHeader = styled.h3`
   font-size: 1.953rem;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight:400;
 `
 
 export const ShoppyText = styled.p`
   font-size: ${typeScale.paragraph};
   text-align: right;
   word-break: normal;
+  font-family: 'Mukta Vaani', sans-serif;
+  font-weight:300;
 `
 
 export default ShoppyWrapper

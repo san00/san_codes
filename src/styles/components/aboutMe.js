@@ -8,5 +8,7 @@ export const AboutMeText = styled.p`
   word-break: normal;
   margin:${spacingScale.spacing_l};
   padding:${spacingScale.spacing_m};
+  font-family: 'Quicksand', sans-serif;
+  font-weight:400;
 `
 export default AboutMeText

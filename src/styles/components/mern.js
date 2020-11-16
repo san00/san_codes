@@ -26,12 +26,16 @@ export const MernImg = styled(Img)`
 export const MernHeader = styled.h3`
   font-size: 1.953rem;
   text-align:center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight:400;
 `
 
 export const MernText = styled.p`
   font-size: ${typeScale.paragraph};
   text-align: left;
   word-break: normal;
+  font-family: 'Mukta Vaani', sans-serif;
+  font-weight:300;
 `
 
 export default MernWrapper

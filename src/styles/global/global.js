@@ -12,7 +12,6 @@ html {
 }
 body {
   line-height: 1.5em;
-  font-family:'Montserrat', sans-serif;
 }
 `
 export default GlobalStyle

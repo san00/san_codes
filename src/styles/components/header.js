@@ -21,8 +21,8 @@ export const HeaderNavAlignLeft = styled.div`
 
 export const HeaderTitle = styled.h1`
   font-size: 2.441rem;
-  font-weight: 700;
-  font-family: "Karla, sans-serif";
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
 `
 
 export const HeaderLink = styled(Link)`
@@ -30,6 +30,8 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   color: ${Neutral[600]};
   transition: all 0.1s ease;
+  font-family: 'Mukta Vaani', sans-serif;
+  font-weight:500;
   &:hover {
     color: ${Red[100]};
   }
