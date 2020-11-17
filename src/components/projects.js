@@ -2,7 +2,6 @@ import React from "react"
 
 import ProjectsWrapper, {
   ProjectsGridHeader,
-  ProjectsGridLink,
   ProjectsGridTextOne,
   ProjectsGridTextTwo,
   Triangle,
@@ -12,7 +11,6 @@ import ProjectsWrapper, {
 function Projects() {
   return (
     <ProjectsWrapper>
-      <ProjectsGridLink to="projects">
         <InnerContainer>
           <Triangle>
             <ProjectsGridTextOne>
@@ -26,7 +24,6 @@ function Projects() {
         <ProjectsGridHeader>
           Starring the following apps and projects
         </ProjectsGridHeader>
-      </ProjectsGridLink>
     </ProjectsWrapper>
   )
 }

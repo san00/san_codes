@@ -11,11 +11,6 @@ const ProjectsWrapper = styled.section`
   flex-direction: column;
   background: ${Blue[100]};
   position: relative;
-  cursor: pointer;
-  & :hover {
-    background: pink;
-    transition: all 0.3s ease;
-  }
 `
 
 export const InnerContainer = styled.div`
