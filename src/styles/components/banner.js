@@ -14,5 +14,11 @@ export const Circle = styled.div`
   background: ${Red[300]};
   border-radius: 50%;
   margin-bottom: ${spacingScale.spacing_m};
+position: relative;
+`
+export const Text = styled.p`
+position:absolute;
+top: 4em;
+left:4em;
 `
 export default BannerWrapper

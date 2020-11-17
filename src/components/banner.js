@@ -1,12 +1,12 @@
 import React from "react"
 
-import BannerWrapper, { Circle } from "../styles/components/banner"
+import BannerWrapper, { Circle, Text } from "../styles/components/banner"
 
 function Banner() {
   return (
     <BannerWrapper>
       <Circle>
-        <p>sancodes presents</p>
+        <Text>sancodes presents</Text>
       </Circle>
     </BannerWrapper>
   )
