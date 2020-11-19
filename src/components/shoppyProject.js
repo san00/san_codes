@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import ShoppyWrapper, {
+import ShoppyContainer, {
   InnerWrapper,
   ShoppyImg,
   ShoppyHeader,
-  ShoppyText,
-} from "../styles/components/shoppy"
+  ShoppyText
+} from "../styles/components/shoppyProject"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -19,12 +19,12 @@ import ShoppyWrapper, {
  * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-function Shoppy() {
+function ShoppyProject() {
   const shoppyImage = useStaticQuery(graphql`
     query {
       appImage: file(relativePath: { eq: "shoppy.png" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -37,26 +37,24 @@ function Shoppy() {
   }
 
   return (
-    <ShoppyWrapper>
-      <p>
-        <ShoppyImg
-          fluid={shoppyImage.appImage.childImageSharp.fluid}
-          alt="shopping cart with drinks"
-          backgroundColor="#546387"
-        ></ShoppyImg>
-      </p>
+    <ShoppyContainer>
+      <ShoppyImg
+        fluid={shoppyImage.appImage.childImageSharp.fluid}
+        alt="shopping cart with drinks"
+        backgroundColor="#546387"
+      ></ShoppyImg>
       <InnerWrapper>
         <ShoppyHeader>Shoppy e-commerce</ShoppyHeader>
         <ShoppyText>
-          Buy drinks from the store by adding them to a cart and checking out.
-          The app uses a headless CMS architecture to edit and manage content.
-          Consuming the API using GraphQl.
+          Buy drinks from the store, add drinks to the cart, then check out and
+          pay. The app uses a headless CMS architecture to edit and manage
+          content and consumes the API with GraphQl.
         </ShoppyText>
         <ShoppyText>React, GraphQL, Strapi, Stripe, MongoDB </ShoppyText>
         <ShoppyText>social links to go here</ShoppyText>
       </InnerWrapper>
-    </ShoppyWrapper>
+    </ShoppyContainer>
   )
 }
 
-export default Shoppy
+export default ShoppyProject
