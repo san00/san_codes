@@ -1,14 +1,13 @@
 import styled from "styled-components"
-import { Neutral, spacingScale, mediaQuery, typeScale } from "../utils"
+import { spacingScale, typeScale, mediaQuery, Neutral } from "../utils"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-const ShoppyContainer = styled.section`
+const MernContainer = styled.section`
   display: flex;
   flex-direction: column;
   padding-left: calc((100vw - 60em) / 2);
   padding-right: calc((100vw - 60em) / 2);
-  margin-bottom:${spacingScale.spacing_xl};
 
   @media (min-width: ${mediaQuery.breakpoint1}) {
     flex-direction: row;
@@ -18,13 +17,13 @@ const ShoppyContainer = styled.section`
 export const InnerWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin-bottom:${spacingScale.spacing_xxl};
+  margin-bottom:${spacingScale.spacing_xl};
 `
-export const ShoppyLink = styled(Link)`
+export const MernLink = styled(Link)`
   text-decoration: none;
 `
 
-export const ShoppyImg = styled(Img)`
+export const MernImg = styled(Img)`
   height: 100%;
 
   @media (min-width: ${mediaQuery.breakpoint1}) {
@@ -32,7 +31,7 @@ export const ShoppyImg = styled(Img)`
     min-width: 50%;
   }
 `
-export const ShoppyHeader = styled.h3`
+export const MernHeader = styled.h3`
   font-size: 1.563rem;
   line-height: 1.28em;
   padding-left: ${spacingScale.spacing_l};
@@ -41,7 +40,7 @@ export const ShoppyHeader = styled.h3`
   color: ${Neutral[600]};
 `
 
-export const ShoppyText = styled.p`
+export const MernText = styled.p`
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
   word-break: normal;
@@ -50,7 +49,6 @@ export const ShoppyText = styled.p`
   font-weight: 500;
   color: ${Neutral[500]};
 `
-
 export const IconWrapper = styled.section`
   display: flex;
   margin-left: auto;
@@ -64,6 +62,7 @@ export const Github = styled.a`
   fill: ${Neutral[400]};
   color: ${Neutral[400]};
   margin-left: auto;
+  padding-right: ${spacingScale.spacing_l};
   & :hover {
     fill: ${Neutral[600]};
     color: ${Neutral[600]};
@@ -71,4 +70,14 @@ export const Github = styled.a`
   }
 `
 
-export default ShoppyContainer
+export const AppLink = styled.a`
+  fill: ${Neutral[400]};
+  color: ${Neutral[400]};
+  & :hover {
+    fill: ${Neutral[600]};
+    color: ${Neutral[600]};
+    transition: all 0.1s ease;
+  }
+`
+
+export default MernContainer
