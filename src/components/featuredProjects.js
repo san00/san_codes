@@ -3,15 +3,16 @@ import React from "react"
 import ShoppyProject from "./shoppyProject"
 import ColourWrapper from "../styles/components/featuredProjects"
 import MernProject from "./mernProject"
+import Container from "../styles/global/container"
 
 function FeaturedProjects() {
   return (
-    <div>
+    <Container>
       <ColourWrapper>
         <ShoppyProject />
         <MernProject />
       </ColourWrapper>
-    </div>
+    </Container>
   )
 }
 

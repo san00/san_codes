@@ -52,13 +52,13 @@ function MernProject() {
           app uses a NoSQL database to manage content. Consumed through REST API
           endpoints.
         </MernText>
-        <MernText>MongoDB, Express, React, Node </MernText>
+        <MernText>MongoDB, Express, React, Node. </MernText>
         <IconWrapper>
           <Github href="https://github.com/san00">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
             >
               <title>View github project repo</title>
@@ -69,8 +69,8 @@ function MernProject() {
           <AppLink href="https://vacancy-manager.herokuapp.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
             >
               <title>Live app preview</title>

@@ -6,9 +6,7 @@ import Img from "gatsby-image"
 const ShoppyContainer = styled.section`
   display: flex;
   flex-direction: column;
-  padding-left: calc((100vw - 60em) / 2);
-  padding-right: calc((100vw - 60em) / 2);
-  margin-bottom:${spacingScale.spacing_xl};
+  margin-bottom: ${spacingScale.spacing_xl};
 
   @media (min-width: ${mediaQuery.breakpoint1}) {
     flex-direction: row;
@@ -18,7 +16,7 @@ const ShoppyContainer = styled.section`
 export const InnerWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin-bottom:${spacingScale.spacing_xxl};
+  margin-bottom: ${spacingScale.spacing_xl};
 `
 export const ShoppyLink = styled(Link)`
   text-decoration: none;
@@ -26,6 +24,7 @@ export const ShoppyLink = styled(Link)`
 
 export const ShoppyImg = styled(Img)`
   height: 100%;
+  box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
 
   @media (min-width: ${mediaQuery.breakpoint1}) {
     margin-right: ${spacingScale.spacing_xl};
@@ -56,7 +55,7 @@ export const IconWrapper = styled.section`
   margin-left: auto;
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
-  padding-top: ${spacingScale.spacing_l};
+  padding-top: ${spacingScale.spacing_xl};
   font-family: "Mukta Vaani", sans-serif;
 `
 

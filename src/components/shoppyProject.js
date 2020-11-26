@@ -49,15 +49,15 @@ function ShoppyProject() {
         <ShoppyText>
           Buy drinks from the store, add drinks to the cart, then check out and
           pay. The app uses a headless CMS architecture to edit and manage
-          content and consumes the API with GraphQl.
+          content, consuming the API with GraphQl.
         </ShoppyText>
-        <ShoppyText>React, GraphQL, Strapi, Stripe, MongoDB </ShoppyText>
+        <ShoppyText>React, GraphQL, Strapi, Stripe, MongoDB.</ShoppyText>
         <IconWrapper>
           <Github href="https://github.com/san00">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
             >
               <title>View github project repo</title>
