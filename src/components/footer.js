@@ -6,7 +6,7 @@ function Footer() {
   return (
     <nav>
       <Container>
-        <LinksContainer>
+        <LinksContainer id="contact">
           <Twitter href="https://twitter.com/sancodes">Twitter</Twitter>
           <Github href="https://github.com/san00">Github</Github>
         </LinksContainer>

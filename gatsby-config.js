@@ -17,10 +17,10 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-background-image',
+      resolve: "gatsby-background-image",
       options: {
         // add your own characters to escape, replacing the default ':/'
-        specialChars: '/:',
+        specialChars: "/:",
       },
     },
     {
@@ -34,20 +34,23 @@ module.exports = {
         // display: `minimal-ui`,
         // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    plugins: [
-      {
-        resolve: `gatsby-plugin-google-fonts`,
-        options: {
-          fonts: [
-            `Quicksand`,
-            'Mukta Vaani'
-            // you can also specify font weights and styles
-          ],
-          display: 'swap'
-        }
-      }
-    ]
-  },
+      plugins: [
+        {
+          resolve: `gatsby-plugin-google-fonts`,
+          options: {
+            fonts: [
+              `Quicksand`,
+              "Mukta Vaani",
+              // you can also specify font weights and styles
+            ],
+            display: "swap",
+          },
+        },
+      ],
+    },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
