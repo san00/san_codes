@@ -8,7 +8,7 @@ import Container from "../styles/global/container"
 function FeaturedProjects() {
   return (
     <Container>
-      <ColourWrapper>
+      <ColourWrapper id="projects">
         <ShoppyProject />
         <MernProject />
       </ColourWrapper>
