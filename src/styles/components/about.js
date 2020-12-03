@@ -56,5 +56,16 @@ export const TextWrap = styled.div`
 export const ColourWrap = styled.div`
   background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
 `
+export const AboutLink = styled(Link)`
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+`
 
+export const AboutText = styled.p`
+  text-align: center;
+  font-size: 2.441rem;
+  color: ${Neutral[600]};
+  word-break: normal; ;
+`
 export default ImgWrapper
