@@ -1,6 +1,7 @@
 import styled from "styled-components"
-import { typeScale, spacingScale, mediaQuery, Neutral, Blue } from "../utils"
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { typeScale, spacingScale, mediaQuery, Neutral } from "../utils"
+
 
 const ProjectsWrapper = styled.section`
   grid-area: projects;
@@ -9,83 +10,30 @@ const ProjectsWrapper = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: ${Blue[100]};
-  position: relative;
+  background: linear-gradient(#ff9a9e, #fad0c4);
+  transition: 1s ease-in-out;
+  & :hover {
+    transition: 1s ease-in-out;
+    transform: scale(0.9);
+  }
 `
 
-export const InnerContainer = styled.div`
+export const Header = styled.h5`
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: ${spacingScale.spacing_s};
-`
-
-export const Triangle = styled.div`
-  width: 100;
-  height: 100;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid black;
-`
-
-export const ProjectsGridHeader = styled.h5`
+  padding: ${spacingScale.spacing_l};
   color: ${Neutral[600]};
-  font-size: 1.25rem;
+  font-size: ${typeScale.paragraph};
   margin: ${spacingScale.spacing_s};
-  padding-left: ${spacingScale.spacing_l};
-  padding-right: ${spacingScale.spacing_l};
-  text-align: center;
-`
-
-export const ProjectsGridTextOne = styled.p`
-  color: ${Neutral[100]};
-  font-size: ${typeScale.paragraph};
-  font-weight: 400;
-  position: absolute;
-  left: 60px;
-  bottom: 10px;
-  word-break: normal;
-  visibility: hidden;
+  height: 4em;
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    left: 77px;
-    bottom: 80px;
-    text-align: center;
-    visibility: visible;
-  }
-`
-export const ProjectsGridTextTwo = styled.p`
-  color: ${Neutral[100]};
-  font-size: ${typeScale.paragraph};
-  font-weight: 400;
-  position: absolute;
-  left: 80px;
-  bottom: 40px;
-  visibility: hidden;
-  @media (min-width: ${mediaQuery.breakpoint1}) {
-    left: 97px;
-    bottom: 50px;
-    text-align: center;
-    font-size: 1.125em;
-    visibility: visible;
+    padding-left: ${spacingScale.spacing_l};
+    padding-right: ${spacingScale.spacing_l};
   }
 `
 
-export const ProjectsGridLink = styled(Link)`
-  text-decoration: none;
+export const Anchor = styled(AnchorLink)`
+text-decoration: none;
 `
-
-export const ProjectsText = styled.p`
-  text-align: center;
-  font-size: 1.5rem;
-  color: ${Neutral[600]};
-  word-break: normal;
-`
-
-export const ProjectsLink = styled(Link)`
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: center;
-`
-
 export default ProjectsWrapper
