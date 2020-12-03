@@ -11,7 +11,7 @@ export const TextSection = styled.p`
   font-weight: 400;
   
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    margin-bottom: ${spacingScale.spacing_xxl};
+    margin-bottom: ${spacingScale.spacing_xl};
   }
 `
 export default TextSection
