@@ -1,6 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import AboutWrapper,{AboutGridLink, AboutGridTitle, AboutGridHeader, AboutGridText } from "../styles/components/about"
+import ImgWrapper, {
+  AboutGridLink,
+  AboutGridTitle,
+  AboutGridText,
+  ColourWrap,
+  TextWrap,
+} from "../styles/components/about"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -16,9 +22,9 @@ import AboutWrapper,{AboutGridLink, AboutGridTitle, AboutGridHeader, AboutGridTe
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      explorerImage: file(relativePath: { eq: "explorer.jpg" }) {
+      mural: file(relativePath: { eq: "mural.jpg" }) {
         childImageSharp {
-          fluid{
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -26,21 +32,27 @@ const About = () => {
     }
   `)
 
-  if (!data?.explorerImage?.childImageSharp?.fluid) {
+  if (!data?.mural?.childImageSharp?.fluid) {
     return <div>Picture not found</div>
   }
 
   return (
-    
-   
-    <AboutWrapper fluid={data.explorerImage.childImageSharp.fluid} alt="explorer in jungle">
-     <AboutGridLink to="about" active ><AboutGridTitle >About</AboutGridTitle>
-     <AboutGridHeader>Risky!</AboutGridHeader>
-     <AboutGridText>The true tales of Osania the front-end developer</AboutGridText>
-     </AboutGridLink>
-    </AboutWrapper>
-    
-  ) 
+    <ColourWrap>
+      <ImgWrapper
+        fluid={data.mural.childImageSharp.fluid}
+        alt="Colourful painting on a wall"
+      >
+        <AboutGridLink to="about">
+          <TextWrap>
+            <AboutGridTitle>About</AboutGridTitle>
+            <AboutGridText>
+              The true tales of Osania the front-end developer
+            </AboutGridText>
+          </TextWrap>
+        </AboutGridLink>
+      </ImgWrapper>
+    </ColourWrap>
+  )
 }
 
 export default About
