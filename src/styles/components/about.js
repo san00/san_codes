@@ -36,6 +36,7 @@ export const AboutGridTitle = styled.p`
   font-size: 1.563rem;
   font-weight: 400;
   color: ${Neutral[600]};
+  visibility:hidden;
 `
 
 export const AboutGridText = styled.p`
@@ -45,6 +46,7 @@ export const AboutGridText = styled.p`
   padding-right: ${spacingScale.spacing_m};
   margin: ${spacingScale.spacing_l};
   word-break: normal;
+  visibility:hidden;
 `
 export const TextWrap = styled.div`
   display: flex;
