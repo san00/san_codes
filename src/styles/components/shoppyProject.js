@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Neutral, spacingScale, mediaQuery, typeScale } from "../utils"
+import { Neutral, spacingScale, mediaQuery, typeScale, Red } from "../utils"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
@@ -60,12 +60,12 @@ export const IconWrapper = styled.section`
 `
 
 export const Github = styled.a`
-  fill: ${Neutral[400]};
-  color: ${Neutral[400]};
+  fill: ${Neutral[600]};
+  color: ${Neutral[600]};
   margin-left: auto;
   & :hover {
-    fill: ${Neutral[600]};
-    color: ${Neutral[600]};
+    fill: ${Red[100]};
+    color: ${Red[100]};
     transition: all 0.1s ease;
   }
 `

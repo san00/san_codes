@@ -42,10 +42,12 @@ const About = () => {
         fluid={data.mural.childImageSharp.fluid}
         alt="Colourful painting on a wall"
       >
-        <AboutGridLink to="about">
+        <AboutGridLink to="about" title="about me">
           <TextWrap>
-            <AboutGridTitle>About</AboutGridTitle>
-            <AboutGridText>
+            <AboutGridTitle aria-hidden role="none">
+              About
+            </AboutGridTitle>
+            <AboutGridText aria-hidden role="none">
               The true tales of Osania the front-end developer
             </AboutGridText>
           </TextWrap>
