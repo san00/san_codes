@@ -11,13 +11,21 @@ import Container from "../styles/global/container"
 const Header = () => {
   return (
     <Container small>
+      <Logo to="/" title="home">
+        sancodes
+      </Logo>
       <HeaderContainer>
-        <Logo to="/">sancodes</Logo>
         <HeaderNavAlignRight>
-          <HeaderLink to="/about">about</HeaderLink>
+          <HeaderLink to="/about" title="about me">
+            about
+          </HeaderLink>
         </HeaderNavAlignRight>
-        <Anchor to="/#projects">projects</Anchor>
-        <Anchor to="/#contact">connnect</Anchor>
+        <Anchor to="/#projects" title="view projects">
+          projects
+        </Anchor>
+        <Anchor to="/#contact" title="contact me">
+          connnect
+        </Anchor>
       </HeaderContainer>
     </Container>
   )

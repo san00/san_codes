@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { spacingScale, Neutral } from "../utils"
 
-export const AboutMeText = styled.p`
+export const AboutMeText = styled.h1`
   text-align: center;
   font-size: 1.953rem;
   line-height: 1.28em;
