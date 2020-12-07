@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { spacingScale, mediaQuery, Neutral } from "../utils"
 
-export const TextSection = styled.p`
+export const TextSection = styled.h1`
   text-align: center;
   font-size: 1.953rem;
   color: ${Neutral[600]};

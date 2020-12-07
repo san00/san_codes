@@ -31,7 +31,7 @@ export const ShoppyImg = styled(Img)`
     min-width: 50%;
   }
 `
-export const ShoppyHeader = styled.h3`
+export const ShoppyHeader = styled.h2`
   font-size: 1.563rem;
   line-height: 1.28em;
   padding-left: ${spacingScale.spacing_l};

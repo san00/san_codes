@@ -18,9 +18,10 @@ const ProjectsWrapper = styled.section`
   }
 `
 
-export const Header = styled.h5`
+export const Header = styled.p`
   display: flex;
   align-items: center;
+  font-weight:700;
   justify-content: center;
   padding: ${spacingScale.spacing_l};
   color: ${Neutral[600]};

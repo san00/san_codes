@@ -29,7 +29,7 @@ export const MernImg = styled(Img)`
     min-width: 50%;
   }
 `
-export const MernHeader = styled.h3`
+export const MernHeader = styled.h2`
   font-size: 1.563rem;
   line-height: 1.28em;
   padding-left: ${spacingScale.spacing_l};
