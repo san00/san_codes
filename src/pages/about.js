@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 import Container from "../styles/global/container"
@@ -6,7 +7,8 @@ import { AboutText, AboutLink } from "../styles/components/about"
 
 function About() {
   return (
-    <Layout>
+    <Layout> 
+       <SEO title="About" />
       <Container>
         <AboutText>
           Hello! I'm currently working on this page. <br /> For now, heres a
