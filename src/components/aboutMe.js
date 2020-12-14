@@ -7,8 +7,8 @@ function AboutMe() {
   return (
     <Container>
       <AboutMeText>
-        Hi, I'm a front-end developer. <br /> I create websites and apps. I write
-        code for the things you interact with when using the web. 
+        Hey, I'm Osania. I'm a software dev, building & making
+        things for the web. Welcome to my site.
       </AboutMeText>
     </Container>
   )
