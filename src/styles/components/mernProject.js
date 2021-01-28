@@ -4,11 +4,8 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Container = styled.section`
+  grid-area: mernProject;
   transition: 1s ease-in-out;
-  @media (min-width: ${mediaQuery.breakpoint1}) {
-    margin-left: ${spacingScale.spacing_xl};
-    margin-right: ${spacingScale.spacing_xl};
-  }
   & :hover {
     transition: 1s ease-in-out;
     transform: scale(1.03);
@@ -17,11 +14,13 @@ const Container = styled.section`
 `
 
 export const AppImg = styled(Img)`
-  max-width: 100%;
+  object-fit: contain;
+  max-width: 80%;
   box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    margin-left: ${spacingScale.spacing_xxl};
-    margin-right: ${spacingScale.spacing_xxl};
+    margin-left: ${spacingScale.spacing_l};
+    margin-right: ${spacingScale.spacing_l};
+    max-width: 100%;
   }
 `
 
@@ -30,9 +29,9 @@ export const InnerWrapper = styled.section`
   flex-direction: column;
   @media (min-width: ${mediaQuery.breakpoint1}) {
     flex-direction: column;
-    margin-left: ${spacingScale.spacing_xxl};
-    margin-right: ${spacingScale.spacing_xxl};
-    padding: ${spacingScale.spacing_m} ${spacingScale.spacing_xxl};
+    margin-left: ${spacingScale.spacing_l};
+    margin-right: ${spacingScale.spacing_l};
+    padding: ${spacingScale.spacing_m};
   }
 `
 
@@ -53,7 +52,7 @@ export const Text = styled.p`
 
 export const IconWrapper = styled.section`
   display: flex;
-  margin-left: auto;
+  justify-content: right;
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
   font-family: "Mukta Vaani", sans-serif;
@@ -62,7 +61,6 @@ export const IconWrapper = styled.section`
 export const Github = styled.a`
   fill: ${Neutral[600]};
   color: ${Neutral[600]};
-  margin-left: auto;
   padding-right: ${spacingScale.spacing_l};
   & :hover {
     fill: ${Red[100]};

@@ -10,4 +10,5 @@ export * from "./mernDetail"
 export * from "./mernProject"
 export * from "./shoppyProject"
 export * from "./textSection"
+export * from "./projectGrid"
 
