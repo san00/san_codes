@@ -44,10 +44,10 @@ const About = () => {
       >
         <AboutGridLink to="about" title="about me">
           <TextWrap>
-            <AboutGridTitle aria-hidden role="none">
+            <AboutGridTitle >
               About
             </AboutGridTitle>
-            <AboutGridText aria-hidden role="none">
+            <AboutGridText >
               The true tales of Osania the front-end developer
             </AboutGridText>
           </TextWrap>

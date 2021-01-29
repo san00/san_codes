@@ -3,63 +3,64 @@ import { spacingScale, typeScale, mediaQuery, Neutral, Red } from "../utils"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-const MernContainer = styled.section`
-  display: flex;
-  flex-direction: column;
+const Container = styled.section`
+  grid-area: mernProject;
+  transition: 1s ease-in-out;
+  & :hover {
+    transition: 1s ease-in-out;
+    transform: scale(1.03);
+    text-decoration: underline;
+  }
+`
 
+export const AppImg = styled(Img)`
+  object-fit: contain;
+  max-width: 80%;
+  box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    flex-direction: row;
+    margin-left: ${spacingScale.spacing_l};
+    margin-right: ${spacingScale.spacing_l};
+    max-width: 100%;
   }
 `
 
 export const InnerWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin-bottom: ${spacingScale.spacing_xl};
-`
-export const MernLink = styled(Link)`
-  text-decoration: none;
-`
-
-export const MernImg = styled(Img)`
-  height: 100%;
-  box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    margin-right: ${spacingScale.spacing_xl};
-    min-width: 50%;
+    flex-direction: column;
+    margin-left: ${spacingScale.spacing_l};
+    margin-right: ${spacingScale.spacing_l};
+    padding: ${spacingScale.spacing_m};
   }
 `
-export const MernHeader = styled.h2`
-  font-size: 1.563rem;
+
+export const Header = styled.h2`
   line-height: 1.28em;
-  padding-left: ${spacingScale.spacing_l};
   font-family: "Quicksand", sans-serif;
-  font-weight: 300;
   color: ${Neutral[600]};
 `
 
-export const MernText = styled.p`
+export const Text = styled.p`
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
   word-break: normal;
-  padding-left: ${spacingScale.spacing_l};
   font-family: "Mukta Vaani", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   color: ${Neutral[500]};
 `
+
 export const IconWrapper = styled.section`
   display: flex;
-  margin-left: auto;
+  justify-content: right;
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
-  padding-top: ${spacingScale.spacing_xl};
   font-family: "Mukta Vaani", sans-serif;
 `
 
 export const Github = styled.a`
   fill: ${Neutral[600]};
   color: ${Neutral[600]};
-  margin-left: auto;
   padding-right: ${spacingScale.spacing_l};
   & :hover {
     fill: ${Red[100]};
@@ -78,4 +79,19 @@ export const AppLink = styled.a`
   }
 `
 
-export default MernContainer
+export const ReadMore = styled.p`
+  line-height: 1.58em;
+  word-break: normal;
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 500;
+  color: ${Neutral[500]};
+  & :hover {
+    text-decoration: underline;
+  }
+`
+
+export const AppDetail = styled(Link)`
+  text-decoration: none;
+`
+
+export default Container
