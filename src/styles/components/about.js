@@ -7,13 +7,7 @@ const ImgWrapper = styled(BackgroundImage)`
   grid-area: about;
   width: 100%;
   height: 40vh;
-  border-radius: 0.2em;
   background-position: center;
-  transition: 1s ease-in-out;
-  & :hover {
-    transition: 1s ease-in-out;
-    transform: scale(0.9);
-  }
 `
 export const AboutGridLink = styled(Link)`
   text-decoration: none;
@@ -36,7 +30,7 @@ export const AboutGridTitle = styled.p`
   font-size: 1.563rem;
   font-weight: 400;
   color: ${Neutral[600]};
-  visibility:hidden;
+  visibility: hidden;
 `
 
 export const AboutGridText = styled.p`
@@ -46,7 +40,7 @@ export const AboutGridText = styled.p`
   padding-right: ${spacingScale.spacing_m};
   margin: ${spacingScale.spacing_l};
   word-break: normal;
-  visibility:hidden;
+  visibility: hidden;
 `
 export const TextWrap = styled.div`
   display: flex;
