@@ -49,10 +49,10 @@ function MernProject() {
         ></AppImg>
       </Container>
       <InnerWrapper>
-        <Header noMargin>MERN vacancy manager</Header>
+        <Header noMargin>Vacancy manager app</Header>
         <Text>
           Create, read, update and delete (CRUD) a list of job vacancies. The
-          app uses a NoSQL database, consumed through REST API endpoints.
+          MERN app uses a NoSQL database, consumed through REST API endpoints.
         </Text>
         <Text>
           MongoDB, Express, React, Node, Heroku, Jest & Enzyme unit tests.
