@@ -10,11 +10,12 @@ const ProjectsWrapper = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  cursor: pointer;
   background: linear-gradient(#ff9a9e, #fad0c4);
   transition: 1s ease-in-out;
   & :hover {
     transition: 1s ease-in-out;
-    transform: scale(0.9);
+    transform: scale(1.03);
   }
 `
 
