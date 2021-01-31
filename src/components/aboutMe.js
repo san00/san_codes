@@ -1,15 +1,15 @@
 import React from "react"
 
-import AboutMeText from "../styles/components/aboutMe"
+import { AboutMeText, Text } from "../styles/components/aboutMe"
 import Container from "../styles/global/container"
 
 function AboutMe() {
   return (
     <Container>
-      <AboutMeText>
-        Hey, I'm Osania. I'm a software dev, building & making
-        things for the web. Welcome to my site.
-      </AboutMeText>
+      <AboutMeText>Hey, I'm Osania.</AboutMeText>
+      <Text>
+        I'm a software developer, building & making things for the web.
+      </Text>
     </Container>
   )
 }
