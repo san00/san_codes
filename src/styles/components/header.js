@@ -24,7 +24,7 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   color: ${Neutral[600]};
   transition: all 0.1s ease;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   &:hover {
     color: ${Red[100]};
@@ -45,7 +45,7 @@ export const Anchor = styled(AnchorLink)`
   text-decoration: none;
   color: ${Neutral[600]};
   transition: all 0.1s ease;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   &:hover {
     color: ${Red[100]};
