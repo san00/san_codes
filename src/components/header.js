@@ -26,6 +26,9 @@ const Header = () => {
         <Anchor to="/#contact" title="contact me">
           connnect
         </Anchor>
+        <HeaderLink to="/blog" title="blog">
+            blog
+          </HeaderLink>
       </HeaderContainer>
     </Container>
   )

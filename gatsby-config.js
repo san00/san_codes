@@ -1,5 +1,5 @@
 module.exports = {
-  siteMetadata: { 
+  siteMetadata: {
     title: `Osania - Software Dev`,
     description: `Osania is a software developer, making things for the web.`,
     author: `@sancodes`,
@@ -51,8 +51,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // Links dev.to blog posts
+    {
+      resolve: "gatsby-source-dev",
+      options: {
+        username: "san00",
+      },
+    },
   ],
 }
