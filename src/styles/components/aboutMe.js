@@ -98,3 +98,15 @@ export const Twitter = styled.a`
     color: ${Red[100]};
   }
 `
+
+export const TalkLink = styled.a`
+text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.58em;
+  color: ${Neutral[600]};
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  &:hover {
+    color: ${Red[100]};
+  }
+`

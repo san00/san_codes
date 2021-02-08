@@ -10,6 +10,7 @@ import {
   Wrap,
   GoalsHeader,
   Twitter,
+  TalkLink,
 } from "../styles/components/aboutMe"
 
 function About() {
@@ -19,9 +20,9 @@ function About() {
       <Container>
         <BioText>
           Hi I’m Osania. I’m a software developer. I’ve made the leap to tech
-          after working in non-tech role's and I’m open to new opportunities. I
-          really enjoy the creative side of front-end development and gave my
-          first ever tech talk on CSS specificity in 2019.
+          after working in non-tech roles and I’m open to new opportunities. I
+          really enjoy the creative side of front-end development and <TalkLink href="https://www.youtube.com/watch?v=SC18G2ksrDI">gave my
+          first ever tech talk on CSS specificity here.</TalkLink> 
         </BioText>
         <Wrap>
           <GoalsHeader>Goals for 2021</GoalsHeader>
@@ -31,10 +32,10 @@ function About() {
           </Goals>
         </Wrap>
         <BioText>
-          I’m continuing to learn React and also now experimenting with GSAP
+          Continuing to learn React and also now experimenting with GSAP
           animations. This site is a place for my projects, code, writing,
-          learning and other interesting things I might like or appreciate and
-          post here from time to time. <br />
+          and learning. Including other interesting things I might like, appreciate and
+          post on here from time to time. <br />
           Welcome to my little piece of the web.
           <Twitter href="https://twitter.com/sancodes">
             Say hello @sancodes
