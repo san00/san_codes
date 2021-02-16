@@ -45,7 +45,7 @@ export const Text = styled.p`
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
   word-break: normal;
-  font-family: "Mukta Vaani", sans-serif;
+  font-family: "krub", sans-serif;
   font-weight: 300;
   color: ${Neutral[500]};
 `
@@ -55,7 +55,7 @@ export const IconWrapper = styled.section`
   justify-content:right;
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
-  font-family: "Mukta Vaani", sans-serif;
+  font-family: "krub", sans-serif;
 `
 
 export const Github = styled.a`
@@ -82,7 +82,7 @@ export const AppLink = styled.a`
 export const ReadMore = styled.p`
   line-height: 1.58em;
   word-break: normal;
-  font-family: "Mukta Vaani", sans-serif;
+  font-family: "krub", sans-serif;
   font-weight: 500;
   color: ${Neutral[500]};
   & :hover {

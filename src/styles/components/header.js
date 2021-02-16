@@ -24,7 +24,7 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   color: ${Neutral[600]};
   transition: all 0.1s ease;
-  font-family: "Quicksand", sans-serif;
+  font-family: "krub", sans-serif;
   font-weight: 400;
   &:hover {
     color: ${Red[100]};
@@ -37,7 +37,7 @@ export const Logo = styled(Link)`
   font-size: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+  font-family: "krub", sans-serif;
 `
 
 export const Anchor = styled(AnchorLink)`
@@ -45,7 +45,7 @@ export const Anchor = styled(AnchorLink)`
   text-decoration: none;
   color: ${Neutral[600]};
   transition: all 0.1s ease;
-  font-family: "Quicksand", sans-serif;
+  font-family: "krub", sans-serif;
   font-weight: 400;
   &:hover {
     color: ${Red[100]};

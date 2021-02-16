@@ -1,5 +1,5 @@
-import {createGlobalStyle} from "styled-components"
-import { normalize } from "polished";
+import { createGlobalStyle } from "styled-components"
+import { normalize } from "polished"
 
 const GlobalStyle = createGlobalStyle`
 ${normalize()}
@@ -12,6 +12,7 @@ html {
 }
 body {
   line-height: 1.5em;
+  font-family:"krub";
 }
 `
 export default GlobalStyle

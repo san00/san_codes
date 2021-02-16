@@ -3,12 +3,9 @@ import { spacingScale, typeScale, mediaQuery, Neutral } from "../utils"
 import Img from "gatsby-image"
 
 export const DesktopImg = styled(Img)`
-  max-width: 100%;
-  padding: ${spacingScale.spacing_l};
-  box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
-  @media (min-width: ${mediaQuery.breakpoint1}) {
-    min-width: 30%;
-  }
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-bottom: ${spacingScale.spacing_xl};
 `
 
 export const MobileImg = styled(Img)`
@@ -19,6 +16,7 @@ export const MobileImg = styled(Img)`
     min-width: 30%;
   }
 `
+
 export const FormImg = styled(Img)`
   width: 60%;
   box-shadow: 0 1px 6px 0 hsla(0, 0%, 0%, 0.2);
@@ -41,16 +39,28 @@ export const TextDetail = styled.p`
   padding-bottom: ${spacingScale.spacing_l};
   line-height: 1.58em;
   word-break: normal;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+  font-family: "krub", sans-serif;
+  font-weight: 300;
   color: ${Neutral[500]};
+  text-align: center;
+  width:65ch;
 `
 
 export const FigTxt = styled.p`
   font-size: ${typeScale.helperText};
   line-height: 1.58em;
   word-break: normal;
-  font-family: "Quicksand", sans-serif;
+  font-family: "krub", sans-serif;
   font-weight: 500;
   color: ${Neutral[500]};
+`
+
+export const InnerWrap = styled.div`
+padding: ${spacingScale.spacing_m};
+`
+
+export const AppHeading = styled.p`
+font-size:1.5em;
+font-family: "krub", sans-serif;
+font-weight: 500;
 `
