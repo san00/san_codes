@@ -7,8 +7,8 @@ export const TextSection = styled.h1`
   color: ${Neutral[600]};
   word-break: normal;
   padding: ${spacingScale.spacing_m};
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-family: "krub", sans-serif;
+  font-weight: 500;
   
   @media (min-width: ${mediaQuery.breakpoint1}) {
     margin-bottom: ${spacingScale.spacing_xl};

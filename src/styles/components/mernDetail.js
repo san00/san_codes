@@ -38,9 +38,9 @@ export const TextDetail = styled.p`
   font-size: ${typeScale.paragraph};
   padding-bottom: ${spacingScale.spacing_l};
   line-height: 1.58em;
-  word-break: keep-all;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+  word-break: normal;
+  font-family: "krub", sans-serif;
+  font-weight: 300;
   color: ${Neutral[500]};
   text-align: center;
   width:65ch;
@@ -50,7 +50,7 @@ export const FigTxt = styled.p`
   font-size: ${typeScale.helperText};
   line-height: 1.58em;
   word-break: normal;
-  font-family: "Quicksand", sans-serif;
+  font-family: "krub", sans-serif;
   font-weight: 500;
   color: ${Neutral[500]};
 `
@@ -61,4 +61,6 @@ padding: ${spacingScale.spacing_m};
 
 export const AppHeading = styled.p`
 font-size:1.5em;
+font-family: "krub", sans-serif;
+font-weight: 500;
 `
