@@ -5,6 +5,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import {
   TextDetail,
+  TextDetailLast,
+  TextDetailFirst,
   DesktopImg,
   MobileImg,
   FormImg,
@@ -12,6 +14,8 @@ import {
   FigTxt,
   AppHeading,
   InnerWrap,
+  TextWrap,
+  Tech,
 } from "../styles/components/mernDetail"
 import Container from "../styles/global/container"
 
@@ -48,54 +52,51 @@ function MernApp() {
   return (
     <Layout>
       <SEO title="MERN project" />
+      <TextDetailFirst>
+        A proof-of-concept MERN - CRUD app.
+      </TextDetailFirst>
+      <Tech>
+        Tech: MongoDB Atlas, Express, React, NodeJS, Jest and Enzyme, Axios,
+        Heroku, Sass, BEM, Flexbox.
+      </Tech>
       <DesktopImg
         fluid={mernImage.desktop.childImageSharp.fluid}
         alt="App UI showing a list of jobs with a blue background"
       />
       <Container>
-        <ImgWrap>
+        <TextWrap>
           <InnerWrap>
-            <TextDetail>
-              A proof-of-concept MERN CRUD app to manage a selection of job listings.
-              <br />
-              <b>
-                Tech: MongoDB Atlas, Express, React, NodeJS, Jest and Enzyme,
-                Axios, Heroku, Sass, BEM, Flexbox.
-              </b>
-            </TextDetail>
             <AppHeading>Why the MERN stack?</AppHeading>
             <TextDetail>
               The project was originally a fullstack solution for a tech test
-              and was partially completed. <br></br>Although I didn’t get the
-              job, I wanted to finish the app and saw it as a good opportunity
-              to continue learning and improving my skills. As the original
-              challenge didn’t stipulate any specific technologies or
+              and was partially completed. Although I didn’t get the job, I
+              wanted to finish the app and saw it as a good opportunity to
+              continue learning and improving my skills. <br></br>As the
+              original challenge didn’t stipulate any specific technologies or
               frameworks. I chose the MERN stack, as I'd been using JavaScript,
               learning React and could use
               <b> modern hooks-based React components</b> on the front-end and
               <b> NodeJS</b> for the API and CRUD functionality on the backend.
             </TextDetail>
-
             <AppHeading>Challenges and things I'm proud of</AppHeading>
             <TextDetail>
-              Building a responsive and functional application involved lots of
-              design and architecture decisions. <br /> Following SOLID
-              principles, writing resuable code, adding accessibility features
-              and getting a better understanding of scope, props drilling and
-              using promises are some of the things I'm proud of.
+              Building a responsive and functional job listing application
+              involved lots of design and architecture decisions. Following
+              SOLID principles, writing resuable code, adding accessibility
+              features and getting a better understanding of scope, props and
+              promises are some of the things I'm proud of.
             </TextDetail>
             <AppHeading>Lessons learned</AppHeading>
-            <TextDetail>
+            <TextDetailLast>
               Separating concerns, creating reusable components, client and
-              server side form validation. <br />
-              TDD - unit testing with Jest and Enzyme and understanding what to
-              test, managing and updating state in React, extracting reusable
-              functionality with custom hooks, adding responsiveness, achieving
-              better UI design's, creating API routes and connecting to a
-              database.
-            </TextDetail>
+              server side form validation. TDD - unit testing with Jest and
+              Enzyme and understanding what to test, managing and updating state
+              in React, extracting reusable functionality with custom hooks,
+              adding responsiveness, achieving better UI design's, creating API
+              routes and connecting to a database.
+            </TextDetailLast>
           </InnerWrap>
-        </ImgWrap>
+        </TextWrap>
         <ImgWrap>
           <MobileImg
             fluid={mernImage.mobile.childImageSharp.fluid}
