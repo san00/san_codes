@@ -4,7 +4,6 @@ import HeaderContainer, {
   HeaderNavAlignRight,
   HeaderLink,
   Logo,
-  Anchor,
 } from "../styles/components/header"
 import Container from "../styles/global/container"
 
@@ -20,12 +19,9 @@ const Header = () => {
             about
           </HeaderLink>
         </HeaderNavAlignRight>
-        <Anchor to="/#projects" title="view projects">
+        <HeaderLink to="/projects" title="view projects">
           projects
-        </Anchor>
-        <Anchor to="/#contact" title="contact me">
-          connnect
-        </Anchor>
+        </HeaderLink>
         <HeaderLink to="/blog" title="blog">
             blog
           </HeaderLink>
