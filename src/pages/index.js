@@ -4,16 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Grid from "../components/grid"
 import AboutMe from "../components/aboutMe"
-import TextSection from "../components/textSection"
-import FeaturedProjects from "../components/featuredProjects"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="home" />
     <AboutMe/>
     <Grid />
-    <TextSection/>
-    <FeaturedProjects/>
   </Layout>
 )
 
