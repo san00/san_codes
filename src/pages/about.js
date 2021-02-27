@@ -11,6 +11,9 @@ import {
   GoalsHeader,
   Twitter,
   TalkLink,
+  Bckgrnd,
+  BioHeader,
+  Wrapper,
 } from "../styles/components/aboutMe"
 
 function About() {
@@ -18,21 +21,26 @@ function About() {
     <Layout>
       <SEO title="About" />
       <Container>
-        <BioText>
-          Hi I’m Osania. I’m a software developer. Welcome to my little piece of
-          the web. This site is a place for my projects, writing, learning and
-          musings. <br />
-          <Twitter href="https://twitter.com/sancodes">
-            Say hello @sancodes
-          </Twitter>
-          or watch my first ever tech talk <br/>
-          <TalkLink href="https://www.youtube.com/watch?v=SC18G2ksrDI">
-           on CSS specificity.
-          </TalkLink>
-        </BioText>
-        <AboutLink to="/">
-          Go back to the home page. It's currently nicer there.
+        <Bckgrnd>
+          <Wrap>
+            <BioHeader>About </BioHeader>
+            <BioText>
+              Hi I’m Osania. I’m a software developer. <br/>Welcome to my little
+              piece of the web. This site is a place for my projects, writing,
+              learning and musings.
+              <Twitter href="https://twitter.com/sancodes">
+                Say hello @sancodes
+              </Twitter>
+              or watch my first ever tech talk
+              <TalkLink href="https://www.youtube.com/watch?v=SC18G2ksrDI">
+                on CSS specificity.
+              </TalkLink>
+            </BioText>
+            <AboutLink to="/">
+          Go back to the home page. 
         </AboutLink>
+          </Wrap>
+        </Bckgrnd>
       </Container>
     </Layout>
   )
