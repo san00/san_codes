@@ -41,7 +41,7 @@ function FeaturedProjects() {
     return <div>Picture not found</div>
   }
   return (
-    <Container>
+    <div>
       <SEO title="projects" />
       <Wrapper id="projects">
         <AppDetail to="/mernApp/">
@@ -58,7 +58,7 @@ function FeaturedProjects() {
               unit tests.
             </Description>
             <ReadMore>Read more</ReadMore>
-            <IconWrapper>
+            {/* <IconWrapper>
               <Github href="https://github.com/san00">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ function FeaturedProjects() {
                 </svg>
                 demo
               </AppLink>
-            </IconWrapper>
+            </IconWrapper> */}
           </InnerWrapper>
         </AppDetail>
         <AppDetail to="/shoppyApp/">
@@ -100,7 +100,7 @@ function FeaturedProjects() {
               Stripe, MongoDB.
             </Description>
             <ReadMore>Read more</ReadMore>
-            <IconWrapper>
+            {/* <IconWrapper>
               <Github href="https://github.com/san00/online-store">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,11 +113,11 @@ function FeaturedProjects() {
                 </svg>
                 repo
               </Github>
-            </IconWrapper>
+            </IconWrapper> */}
           </InnerWrapper>
         </AppDetail>
       </Wrapper>
-    </Container>
+    </div>
   )
 }
 

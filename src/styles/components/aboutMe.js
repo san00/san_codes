@@ -25,7 +25,8 @@ export const Text = styled.p`
   line-height: 1.58em;
   font-family: "krub", sans-serif;
   padding-left: ${spacingScale.spacing_xs};
-  margin: 0;
+  margin-bottom: ${spacingScale.spacing_xxl};
+  margin-top: 0;
   @media (min-width: ${mediaQuery.breakpoint1}) {
     text-align: left;
   }
