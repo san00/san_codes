@@ -8,7 +8,7 @@ function AboutMe() {
     <Container>
       <AboutMeText>Hey, I'm Osania.</AboutMeText>
       <Text>
-        I'm a software developer, building & making things for the web.
+        I make things for the web.
         <BioLink to="/about" title="about me">
           Learn more about me,
         </BioLink>

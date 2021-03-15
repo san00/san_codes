@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 
 export const Wrapper = styled.section`
   display: grid;
-  gap: 1em 3em;
   grid-template-columns: repeat(auto-fit);
   grid-template-areas:
     "mern"

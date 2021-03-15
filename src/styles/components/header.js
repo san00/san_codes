@@ -8,6 +8,7 @@ const HeaderContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 5em;
+  margin: ${spacingScale.spacing_m} ${spacingScale.spacing_m} ${spacingScale.spacing_xl} ${spacingScale.spacing_m};
 `
 
 export const HeaderNavAlignRight = styled.div`

@@ -9,11 +9,12 @@ import Container from "../styles/global/container"
 
 const Header = () => {
   return (
-    <Container small>
+    <div>
+      
+      <HeaderContainer>
       <Logo to="/" title="home">
         sancodes
       </Logo>
-      <HeaderContainer>
         <HeaderNavAlignRight>
           <HeaderLink to="/about" title="about me">
             about
@@ -26,7 +27,7 @@ const Header = () => {
             blog
           </HeaderLink>
       </HeaderContainer>
-    </Container>
+    </div>
   )
 }
 
