@@ -20,12 +20,9 @@ const Header = () => {
             about
           </HeaderLink>
         </HeaderNavAlignRight>
-        <HeaderLink to="/projects" title="view projects">
-          projects
-        </HeaderLink>
-        <HeaderLink to="/blog" title="blog">
-            blog
-          </HeaderLink>
+        {/* <HeaderLink to="/blog" title="blog">
+            dev.to - blog
+          </HeaderLink> */}
       </HeaderContainer>
     </div>
   )

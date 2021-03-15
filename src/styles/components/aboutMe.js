@@ -5,14 +5,14 @@ import { Link } from "gatsby"
 export const AboutMeText = styled.h1`
   color: ${Neutral[600]};
   word-break: normal;
-  padding: ${spacingScale.spacing_xs};
+  padding: ${spacingScale.spacing_s};
   margin: 0;
   font-family: "krub", sans-serif;
   font-weight: 500;
   line-height: 1.28em;
-  text-align: center;
+  text-align: left;
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    text-align: left;
+    padding-left: ${spacingScale.spacing_xs};
   }
 `
 
@@ -21,14 +21,15 @@ export const Text = styled.p`
   color: ${Neutral[500]};
   word-break: normal;
   font-size: 1.25rem;
-  text-align: center;
+  text-align: left;
   line-height: 1.58em;
   font-family: "krub", sans-serif;
-  padding-left: ${spacingScale.spacing_xs};
-  margin-bottom: ${spacingScale.spacing_xxl};
+  padding-left: ${spacingScale.spacing_s};
+  margin-bottom: ${spacingScale.spacing_xl};
   margin-top: 0;
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    text-align: left;
+    margin-bottom: ${spacingScale.spacing_xxl};
+    padding-left: ${spacingScale.spacing_xs};
   }
 `
 export const BioHeader = styled.p`
@@ -86,6 +87,7 @@ export const Twitter = styled.a`
 
 export const TalkLink = styled.a`
   text-align: center;
+  padding: ${spacingScale.spacing_xs};
   font-size: 1.25rem;
   line-height: 1.58em;
   color: ${Neutral[600]};
@@ -107,4 +109,17 @@ export const Bckgrnd = styled.section`
    
   }
  
+ 
+`
+export const BlogLink = styled.a`
+  text-align: center;
+  padding: ${spacingScale.spacing_xs};
+  font-size: 1.25rem;
+  line-height: 1.58em;
+  color: ${Neutral[600]};
+  font-family: "krub", sans-serif;
+  font-weight: 300;
+  &:hover {
+    color: ${Red[100]};
+  }
 `
