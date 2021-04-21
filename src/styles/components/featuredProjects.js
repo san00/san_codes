@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 
 export const Wrapper = styled.section`
   display: grid;
+  gap: 0.2em;
   grid-template-columns: repeat(auto-fit);
   grid-template-areas:
     "mern"
@@ -19,8 +20,7 @@ export const Wrapper = styled.section`
 export const InnerWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: left;
   @media (min-width: ${mediaQuery.breakpoint1}) {
     width: 100%;
     height: 100%;
@@ -46,6 +46,7 @@ export const Title = styled.p`
   font-weight: 500;
   color: ${Neutral[600]};
   padding: ${spacingScale.spacing_m};
+  margin: ${spacingScale.spacing_m};
   @media (min-width: ${mediaQuery.breakpoint1}) {
     margin-bottom: ${spacingScale.spacing_s};
   }
@@ -60,8 +61,9 @@ export const Description = styled.p`
   color: ${Neutral[500]};
   margin: 0;
   padding: ${spacingScale.spacing_m};
+  max-width: 60ch;
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    margin: 0;
+    margin: 0 ${spacingScale.spacing_m};
   }
 `
 export const ReadMore = styled.p`
@@ -69,33 +71,34 @@ export const ReadMore = styled.p`
   word-break: normal;
   font-family: "krub", sans-serif;
   font-weight: 500;
-  margin: 0;
+  margin: ${spacingScale.spacing_m};
   color: ${Neutral[500]};
+  text-decoration: underline;
   & :hover {
-    text-decoration: underline;
+    color: ${Red[100]};
   }
   @media (min-width: ${mediaQuery.breakpoint1}) {
     padding: ${spacingScale.spacing_m};
-    margin-bottom: ${spacingScale.spacing_l};
+    margin-bottom: ${spacingScale.spacing_xs};
   }
 `
 
 export const IconWrapper = styled.section`
   display: flex;
-  justify-content: left;
+  justify-content: right;
   font-size: ${typeScale.paragraph};
   line-height: 1.58em;
   font-family: "krub", sans-serif;
   margin-bottom: ${spacingScale.spacing_m};
   @media (min-width: ${mediaQuery.breakpoint1}) {
-    margin-bottom: ${spacingScale.spacing_l};
+    padding: ${spacingScale.spacing_m};
   }
 `
 
 export const Github = styled.a`
   fill: ${Neutral[600]};
   color: ${Neutral[600]};
-  padding-right: ${spacingScale.spacing_xl};
+  padding-right: ${spacingScale.spacing_l};
   & :hover {
     fill: ${Red[100]};
     color: ${Red[100]};
@@ -106,6 +109,7 @@ export const Github = styled.a`
 export const AppLink = styled.a`
   fill: ${Neutral[600]};
   color: ${Neutral[600]};
+  padding-right: ${spacingScale.spacing_xl};
   & :hover {
     fill: ${Red[100]};
     color: ${Red[100]};
