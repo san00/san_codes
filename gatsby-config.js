@@ -58,5 +58,15 @@ module.exports = {
         username: "san00",
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: 'posts',
+      },
+    },
   ],
 }
