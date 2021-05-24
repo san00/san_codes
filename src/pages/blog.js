@@ -2,6 +2,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { InnerWrap, TextWrap } from "../styles/components/columnLayout"
 import Container from "../styles/global/container"
 
 const Blog = () => {
@@ -22,6 +23,8 @@ const Blog = () => {
     <Layout>
       <SEO title="blog"/>
       <Container>
+      <TextWrap>
+        <InnerWrap> 
         {data.allMdx.nodes.map(({ id, frontmatter }) => (
           <article key={id}>
             <Link to={frontmatter.slug}>
@@ -29,7 +32,9 @@ const Blog = () => {
             </Link>
           </article>
         ))}
-        <Link to="/">Go back to the homepage</Link>
+        <InnerWrap><Link to="/">Go back to the homepage</Link></InnerWrap>
+        </InnerWrap>
+      </TextWrap>   
       </Container>
     </Layout>
   )

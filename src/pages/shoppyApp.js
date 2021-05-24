@@ -11,7 +11,7 @@ import {
   InnerWrap,
   TextWrap,
   Tech,
-} from "../styles/components/mernDetail"
+} from "../styles/components/columnLayout"
 function ShoppyApp() {
   const shoppyImage = useStaticQuery(graphql`
     query {
