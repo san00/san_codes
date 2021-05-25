@@ -14,6 +14,12 @@ const Blog = () => {
           frontmatter {
             title
             slug
+            tags
+          }
+          fields {
+            readingTime {
+              text
+            }
           }
         }
       }
@@ -21,20 +27,24 @@ const Blog = () => {
   `)
   return (
     <Layout>
-      <SEO title="blog"/>
+      <SEO title="blog" />
       <Container>
-      <TextWrap>
-        <InnerWrap> 
-        {data.allMdx.nodes.map(({ id, frontmatter }) => (
-          <article key={id}>
-            <Link to={frontmatter.slug}>
-              <h2>{frontmatter.title}</h2>
-            </Link>
-          </article>
-        ))}
-        <InnerWrap><Link to="/">Go back to the homepage</Link></InnerWrap>
-        </InnerWrap>
-      </TextWrap>   
+        <TextWrap>
+          <InnerWrap>
+            {data.allMdx.nodes.map(({ id, frontmatter, fields }) => (
+              <article key={id}>
+                <Link to={frontmatter.slug}>
+                  <h2>{frontmatter.title}</h2>
+                  <p>{fields.readingTime.text}</p>
+                  <p>{frontmatter.tags}</p>
+                </Link>
+              </article>
+            ))}
+            <InnerWrap>
+              <Link to="/">Go back to the homepage</Link>
+            </InnerWrap>
+          </InnerWrap>
+        </TextWrap>
       </Container>
     </Layout>
   )
