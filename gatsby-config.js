@@ -64,5 +64,8 @@ module.exports = {
     {
       resolve: "gatsby-remark-reading-time",
     },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+    },
   ],
 }
