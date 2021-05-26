@@ -16,7 +16,7 @@ import {
   InnerWrap,
   TextWrap,
   Tech,
-} from "../styles/components/mernDetail"
+} from "../styles/components/columnLayout"
 import Container from "../styles/global/container"
 
 function MernApp() {
