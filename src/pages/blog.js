@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { InnerWrap, TextWrap } from "../styles/components/columnLayout"
 import Container from "../styles/global/container"
 
@@ -22,7 +22,7 @@ const Blog = () => {
   `)
   return (
     <Layout>
-      <SEO title="blog" />
+      <Seo title="blog" />
       <Container>
         <TextWrap>
           <InnerWrap>
