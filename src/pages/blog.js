@@ -16,11 +16,6 @@ const Blog = () => {
             slug
             tags
           }
-          fields {
-            readingTime {
-              text
-            }
-          }
         }
       }
     }
@@ -35,7 +30,6 @@ const Blog = () => {
               <article key={id}>
                 <Link to={frontmatter.slug}>
                   <h2>{frontmatter.title}</h2>
-                  <p>{fields.readingTime.text}</p>
                   <p>{frontmatter.tags}</p>
                 </Link>
               </article>
