@@ -55,5 +55,8 @@ module.exports = {
         path: "posts",
       },
     },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+    },
   ],
 }
