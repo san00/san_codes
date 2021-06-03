@@ -7,8 +7,10 @@
     "@fontsource/krub": "^4.3.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^1.12.0",
-    "gatsby": "^3.6.0",
+    "bufferutil": "^4.0.3",
+    "gatsby": "^3.6.2",
     "gatsby-background-image": "^1.5.3",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
@@ -23,21 +25,30 @@
     "gatsby-plugin-styled-components": "^4.6.0",
     "gatsby-source-filesystem": "^3.6.0",
     "gatsby-transformer-sharp": "^3.6.0",
+    "intersection-observer": "^0.11.0",
     "netlify-cms-app": "^2.15.17",
     "polished": "^4.1.2",
+    "postcss": "^8.3.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "postcss": "^8.3.0",
-    "babel-eslint": "^10.1.0",
-    "bufferutil": "^4.0.3",
-    "utf-8-validate": "^5.0.5",
-    "intersection-observer": "^0.11.0",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "utf-8-validate": "^5.0.5"
   },
   "devDependencies": {
     "prettier": "2.1.2"
+  },
+  "peerDependencies": {
+    "redux": "^2.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "@types/webpack": "4.x",
+    "type-fest": "^0.13.1",
+    "webpack-hot-middleware": "2.x",
+    "graphql": "^14.4.1",
+    "typescript": ">=2.8.0",
+    "eslint-plugin-jest": "^24.0.0"
   },
   "keywords": [
     "gatsby"
