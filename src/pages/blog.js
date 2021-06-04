@@ -11,6 +11,7 @@ const Blog = () => {
       allMdx {
         nodes {
           id
+          timeToRead
           frontmatter {
             title
             slug
@@ -26,10 +27,11 @@ const Blog = () => {
       <Container>
         <TextWrap>
           <InnerWrap>
-            {data.allMdx.nodes.map(({ id, frontmatter, fields }) => (
+            {data.allMdx.nodes.map(({ id, frontmatter, timeToRead }) => (
               <article key={id}>
                 <Link to={frontmatter.slug}>
                   <h2>{frontmatter.title}</h2>
+                  <p>{timeToRead} min read</p>
                   <p>{frontmatter.tags}</p>
                 </Link>
               </article>
