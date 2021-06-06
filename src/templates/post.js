@@ -15,6 +15,7 @@ export const query = graphql`
       frontmatter {
         title
         author
+        subHeader
       }
       body
     }
@@ -28,6 +29,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
       <TextDetailFirst>{post.frontmatter.title}</TextDetailFirst>
       <TextWrap>
         <InnerWrap>
+          <p>{post.frontmatter.subHeader}</p>
           <MDXRenderer>{post.body}</MDXRenderer>
           <Link to="/blog">back to all posts</Link>
         </InnerWrap>
