@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -51,7 +51,7 @@ function MernApp() {
   }
   return (
     <Layout>
-      <SEO title="MERN project" />
+      <Seo title="MERN project" />
       <TextDetailFirst>
         A proof-of-concept MERN - CRUD app.
       </TextDetailFirst>

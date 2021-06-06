@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { InnerWrap, TextWrap } from "../styles/components/columnLayout"
 import Container from "../styles/global/container"
 
@@ -11,15 +11,11 @@ const Blog = () => {
       allMdx {
         nodes {
           id
+          timeToRead
           frontmatter {
             title
             slug
             tags
-          }
-          fields {
-            readingTime {
-              text
-            }
           }
         }
       }
@@ -27,15 +23,15 @@ const Blog = () => {
   `)
   return (
     <Layout>
-      <SEO title="blog" />
+      <Seo title="blog" />
       <Container>
         <TextWrap>
           <InnerWrap>
-            {data.allMdx.nodes.map(({ id, frontmatter, fields }) => (
+            {data.allMdx.nodes.map(({ id, frontmatter, timeToRead }) => (
               <article key={id}>
                 <Link to={frontmatter.slug}>
                   <h2>{frontmatter.title}</h2>
-                  <p>{fields.readingTime.text}</p>
+                  <p>{timeToRead} min read</p>
                   <p>{frontmatter.tags}</p>
                 </Link>
               </article>

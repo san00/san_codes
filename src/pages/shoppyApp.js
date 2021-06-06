@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -30,7 +30,7 @@ function ShoppyApp() {
   }
   return (
     <Layout>
-      <SEO title="Shoppy app" />
+      <Seo title="Shoppy app" />
       <TextDetailFirst>A proof-of-concept e-commerce app.</TextDetailFirst>
       <Tech>
         Tech: Strapi, React, GraphQL, MongoDB, Stripe, Styled components,

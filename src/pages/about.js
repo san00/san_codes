@@ -1,25 +1,22 @@
 import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import Layout from "../components/layout"
 import Container from "../styles/global/container"
 import { AboutLink } from "../styles/components/about"
 import {
   BioText,
-  Goals,
   Wrap,
-  GoalsHeader,
   Twitter,
   TalkLink,
   Bckgrnd,
   BioHeader,
-  Wrapper,
 } from "../styles/components/aboutMe"
 
 function About() {
   return (
     <Layout>
-      <SEO title="About" />
+      <Seo title="About" />
       <Container>
         <Bckgrnd>
           <Wrap>

@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "san.codes",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "1.0.0",
+  "author": "sancodes",
   "dependencies": {
     "@fontsource/krub": "^4.2.0",
     "@mdx-js/mdx": "^1.6.22",

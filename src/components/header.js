@@ -5,7 +5,6 @@ import HeaderContainer, {
   HeaderLink,
   Logo,
 } from "../styles/components/header"
-import Container from "../styles/global/container"
 
 const Header = () => {
   return (
@@ -20,9 +19,6 @@ const Header = () => {
             about
           </HeaderLink>
         </HeaderNavAlignRight>
-        {/* <HeaderLink to="/blog" title="blog">
-            dev.to - blog
-          </HeaderLink> */}
       </HeaderContainer>
     </div>
   )
