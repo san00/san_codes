@@ -43,7 +43,6 @@ export const PostText = styled.p`
     else if (props.textRight) return "right"
   }};
   margin-bottom: 0;
-  padding-bottom: ${spacingScale.spacing_xs};
   max-width: ${props => {
     if (props.lineLengthM) return "60ch"
     else if (props.lineLengthS) return "25ch"
@@ -52,4 +51,9 @@ export const PostText = styled.p`
     if (props.chunkyFont) return "Quicksand"
     return "krub, sans-serif"
   }};
+  text-decoration: ${props => {
+    if (props.underline) return "underline"
+    return "none"
+  }};
+  text-decoration-color: ${Red[200]};
 `

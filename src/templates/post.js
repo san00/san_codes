@@ -32,7 +32,15 @@ const PostTemplate = ({ data: { mdx: post } }) => (
           <PostText title noCol headerHeight>
             {post.frontmatter.title}
           </PostText>
-          <PostText subHead bold noCol headerHeight textCentre lineLengthS>
+          <PostText
+            subHead
+            bold
+            noCol
+            headerHeight
+            textCentre
+            lineLengthS
+            underline
+          >
             {post.frontmatter.subHeader}
           </PostText>
           <PostText helper> {post.timeToRead} min read</PostText>
