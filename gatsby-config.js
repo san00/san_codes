@@ -47,16 +47,6 @@ module.exports = {
     // MDX blog posts
     {
       resolve: `gatsby-plugin-mdx`,
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "posts",
-        path: "posts",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [
           {
@@ -69,10 +59,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/posts`,
-        name: `posts`,
+        name: "posts",
+        path: "posts",
       },
     },
   ],
