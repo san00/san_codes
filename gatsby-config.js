@@ -16,6 +16,27 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // MDX blog posts
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 2000,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: "posts",
+      },
+    },
     {
       resolve: "gatsby-background-image",
       options: {
@@ -29,7 +50,7 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        icon: `src/images/mernBlueBkgrnd.png`,
+        icon: `src/images/colourful-sky.jpg`,
       },
       plugins: [
         {
@@ -43,17 +64,6 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-anchor-links",
-    },
-    // MDX blog posts
-    {
-      resolve: `gatsby-plugin-mdx`,
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "posts",
-        path: "posts",
-      },
     },
   ],
 }
