@@ -50,7 +50,7 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        icon: `src/images/mernBlueBkgrnd.png`,
+        icon: `src/images/colourful-sky.jpg`,
       },
       plugins: [
         {
